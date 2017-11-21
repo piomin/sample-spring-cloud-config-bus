@@ -2,7 +2,7 @@ package pl.piomin.service.sample.config;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
-import org.springframework.cloud.config.monitor.GithubPropertyPathNotificationExtractor;
+import org.springframework.cloud.config.monitor.GitlabPropertyPathNotificationExtractor;
 import org.springframework.cloud.config.server.EnableConfigServer;
 import org.springframework.context.annotation.Bean;
 
@@ -15,8 +15,8 @@ public class ConfigApplication {
 	}
 
 	@Bean
-	public GithubPropertyPathNotificationExtractor githubPropertyPathNotificationExtractor() {
-		return new GithubPropertyPathNotificationExtractor();
+	public GitlabPropertyPathNotificationExtractor gitlabPropertyPathNotificationExtractor() {
+		return new GitlabPropertyPathNotificationExtractor();
 	}
 
 }

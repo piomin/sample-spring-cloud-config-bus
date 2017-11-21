@@ -8,12 +8,12 @@ spring:
     config:
       server:
         monitor:
-          github:
+          gitlab:
             enabled: true
         git:
-          uri: https://github.com/piomin/sample-spring-cloud-config-repo.git
-          username: ${github.username}
-          password: ${github.password}
+          uri: http://192.168.99.100:10080/root/sample-spring-cloud-config-repo.git
+          username: root
+          password: Piot_123
           cloneOnStart: true
   rabbitmq:
     host: 192.168.99.100
